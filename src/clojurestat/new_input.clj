@@ -1,5 +1,5 @@
 
-(load-file "hjaelpemetoder.clj")
+(load-file "src/clojurestat/hjaelpemetoder.clj")
 
 (defn inputSystemFunc [filename lineRegex documentRegex]
   ((comp
@@ -13,15 +13,15 @@
    filename))
 
 ;(println "************ wubi")
-(def wubizizing (inputSystemFunc "WubiCodesCHR.txt" "\\s+" "\\n+"))
+(def wubizizing (inputSystemFunc "src/clojurestat/WubiCodesCHR.txt" "\\s+" "\\n+"))
 ;(println (take 5 wubizizing))
 ;(println (count wubizizing))
 
 ;(println "************ array30")
 ;([CPU 溫] [WPU 媼] [G.; 啟] [FLVL 莠] [SLH 丸] [XXAX 幾] [OJQ, 爨] [, ，] [. 。] [; 口])
-(def array30_1 (inputSystemFunc "array30_27489CHR.txt" "\\s+" "\\n+"))
-(def array30_2 (inputSystemFunc "array30_ExtB.txt" "\\s+" "\\n+"))
-(def array30_3 (inputSystemFunc "array30_ExtCD.txt" "\\s+" "\\n+"))
+(def array30_1 (inputSystemFunc "src/clojurestat/array30_27489CHR.txt" "\\s+" "\\n+"))
+(def array30_2 (inputSystemFunc "src/clojurestat/array30_ExtB.txt" "\\s+" "\\n+"))
+(def array30_3 (inputSystemFunc "src/clojurestat/array30_ExtCD.txt" "\\s+" "\\n+"))
 
 ;(println (take 10 array30_1))
 ;(println (take 10 array30_2))
@@ -49,17 +49,17 @@
        )
     filename))
 
-(def cangjie (inputSystemFuncEkstra "CangJie_textCHR.txt" "\\s+" "\\n+" 0 0))
+(def cangjie (inputSystemFuncEkstra "src/clojurestat/CangJie_textCHR.txt" "\\s+" "\\n+" 0 0))
 ;(println (take 5 cangjie))
 ;(println (count cangjie))
 
 ;(println "************************ dayi4_4code")
-(def dayi4 (inputSystemFuncEkstra "dayi4.txt" "\\s+" "\\n+" 0 3))
+(def dayi4 (inputSystemFuncEkstra "src/clojurestat/dayi4.txt" "\\s+" "\\n+" 0 3))
 ;(println (take 50 dayi4))
 ;(println (count dayi4))
 
 ;(println "************************ dayi6_3code")
-(def dayi6 (inputSystemFuncEkstra "dayi6_3code.txt" "\\s+" "\\n+" 0 1))
+(def dayi6 (inputSystemFuncEkstra "src/clojurestat/dayi6_3code.txt" "\\s+" "\\n+" 0 1))
 ;(println (take 50 dayi6))
 ;(println (count dayi6))
 
@@ -78,7 +78,7 @@
    filename))
 
 ;(println "************************ wubihua")
-(def wubihua (inputSystemWubihua "wubihua.txt" "\\s+" "\\n+" 0 155))
+(def wubihua (inputSystemWubihua "src/clojurestat/wubihua.txt" "\\s+" "\\n+" 0 155))
 ;(println (take 5 wubihua))
 ;(println (count wubihua))
 
@@ -109,7 +109,7 @@
    filename))
 
 ;(println "************************ zhengma")
-(def zhengma (inputSystemFuncZhengma "zz201906_allcodes.txt" "\\s+" "\\n+" 0 92))
+(def zhengma (inputSystemFuncZhengma "src/clojurestat/zz201906_allcodes.txt" "\\s+" "\\n+" 0 92))
 ;(println (take 5 zhengma))
 ;(println (count zhengma))
 

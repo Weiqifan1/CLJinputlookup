@@ -1,9 +1,9 @@
 
-(load-file "hjaelpemetoder.clj")
+(load-file "src/clojurestat/hjaelpemetoder.clj")
 
-(load-file "statistikfiler.clj")
+(load-file "src/clojurestat/statistikfiler.clj")
 
-(load-file "load_input.clj")
+(load-file "src/clojurestat/load_input.clj")
 
 
 (defn sortUserOutput [x & args]

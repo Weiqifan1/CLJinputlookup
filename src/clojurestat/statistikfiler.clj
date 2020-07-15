@@ -1,5 +1,5 @@
-(load-file "hjaelpemetoder.clj")
-(def filstier_stat (vector "Junda2005.txt" "Tzai2006.txt" "cedict_ts.txt"))
+(load-file "src/clojurestat/hjaelpemetoder.clj")
+(def filstier_stat (vector "src/clojurestat/Junda2005.txt" "src/clojurestat/Tzai2006.txt" "src/clojurestat/cedict_ts.txt"))
 
 ;************ hjaelpe metoder
 

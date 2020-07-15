@@ -1,12 +1,12 @@
 
-(load-file "hjaelpemetoder.clj")
+(load-file "src/clojurestat/hjaelpemetoder.clj")
 
-(load-file "statistikfiler.clj")
+(load-file "src/clojurestat/statistikfiler.clj")
 
 
 
 ;(load-file "load_input.clj")
-(load-file "new_input.clj")
+(load-file "src/clojurestat/new_input.clj")
 (def wubichartoletters (get (get inputMethodEachLineMap "W") "chartoletters"))
 ;(println (take 5 wubichartoletters))
 

@@ -1,5 +1,5 @@
 
-(load-file "hjaelpemetoder.clj")
+(load-file "src/clojurestat/hjaelpemetoder.clj")
 
 (defn inputSystemFunc [filename lineRegex documentRegex]
   ((comp
@@ -10,7 +10,7 @@
      )
    filename))
 
-(def secondWubi (inputSystemFunc "WubiCodesCHR.txt" "\\s+" "\\n+"))
+(def secondWubi (inputSystemFunc "src/clojurestat/WubiCodesCHR.txt" "\\s+" "\\n+"))
 
 ;(println (take 5 secondWubi))
 ;([a 工] [b 子] [c 又] [d 大] [e 月])
