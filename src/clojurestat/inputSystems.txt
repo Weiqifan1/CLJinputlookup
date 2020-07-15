@@ -1,0 +1,10 @@
+# inputSystemName,capitalLetter,filename,regex
+WubiZiZing W WubiCodesCHR.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Cangjie C Cangjie_textCHR.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Array30 A array30_27489CHR.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Array30extB AA array30_ExtB.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Array30extCD AB array30_ExtCD.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Dayi6_3code D dayi6_3code.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Dayi4_4code DA dayi4.txt ^\s*(\S+)\s+(\S+)\s*.*$
+Zhengma Z zz201906_allcodes.txt .*"([^\s"=]+)"="([^\s"=]+)".* ,<
+Wubihua H wubihua.txt ^\s*(\S+)\s+(\S+)\s*.*$
