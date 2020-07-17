@@ -23,3 +23,5 @@ at https://www.gnu.org/software/classpath/license.html.
 
 REST forslag:
 https://medium.com/swlh/building-a-rest-api-in-clojure-3a1e1ae096e
+
+lein run

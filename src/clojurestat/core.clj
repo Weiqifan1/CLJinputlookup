@@ -8,6 +8,9 @@
   [clojure.data.json :as json])
 (:gen-class))
 
+;;(ns example
+;;  (:require [clojure.data.json :as json]))
+
 (load-file "src/clojurestat/hjaelpemetoder.clj")
 
 (defn sortUserOutput [x & args]
@@ -128,17 +131,30 @@
               (pp/pprint req)
               (str "Request Object: " req))})
 
+;; http://127.0.0.1:3000/hello?name=FunctionalHuman
 (defn hello-name [req] ;(3)
   {:status  200
    :headers {"Content-Type" "text/html"}
    :body    (->
               (pp/pprint req)
-              (str "Hello " (:name (:params req))))})
+              (str "Hello der" (:name (:params req))))})
+
+(defn regexresult [req] ;(3)
+  {:status  200
+   :headers {"Content-Type" "text/html"}
+   :body    (->
+              (pp/pprint req)
+              (json/write-str
+                ;;{ :list
+                (charOrLetterSearchAndDefault (:name (:params req)))
+                 ;;}
+                   ))})
 
 (defroutes app-routes
            (GET "/" [] simple-body-page)
            (GET "/request" [] request-example)
            (GET "/hello" [] hello-name)
+           (GET "/regexresult" [] regexresult)
            (route/not-found "Error, page not found!"))
 
 (defn -main

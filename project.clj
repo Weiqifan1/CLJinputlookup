@@ -11,6 +11,6 @@
                  ; Ring defaults - for query params etc
                  [ring/ring-defaults "0.3.2"]
                  ; Clojure data.JSON library
-                 [org.clojure/data.json "0.2.6"]]
+                 [org.clojure/data.json "1.0.0"]]
   :repl-options {:init-ns clojurestat.core}
   :main clojurestat.core/-main)
